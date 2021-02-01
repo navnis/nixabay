@@ -1,0 +1,46 @@
+.header{
+    .header_main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+
+        .logo_with_tabs{
+            display: flex;
+            align-items: center;
+            .logo{
+                img{
+                    height: 55px;
+                }
+            }
+
+            .tabs{
+                margin-left: 20px;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    padding-left: 10px;
+
+                    li{
+                        margin-right: 25px;
+                    }
+
+                    li:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .profile_pic{
+            img{
+                height: 45px;
+                width: 45px;
+            }
+            img:hover{
+                cursor: pointer;
+            }
+
+        }
+    }
+}

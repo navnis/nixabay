@@ -1,0 +1,80 @@
+.searchHighlighter{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .searchHighlighter_main{
+        border-radius: 5px;
+        box-shadow: 0 10px 32px rgba(0,0,0,.3), 0 5px 3px rgba(0,0,0,.1);
+        width: 74%;
+        position: relative;
+
+        .searchHighlighter_input{
+            width: 100%;
+            text-indent: 34px;
+            font-size: 16px;
+            height: 60px;
+            background-image: url('../../assets/images/search-black.svg');
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 10px;
+            border: unset;
+            padding: 0;
+            border-radius: 5px;
+        }
+
+        .searchHighlighter_input:focus{
+            -webkit-appearance: none;
+            outline: none;
+        }
+
+        .searchHighlighter_suggestion_main{
+            width: 100%;
+            position:absolute;
+           z-index: 2;
+
+            .searchHighlighter_suggestion_container{
+                max-height: 139px;
+                overflow-x: hidden;
+                background-color: white;
+
+                .single_suggestion{
+                    text-align: initial;                    
+                    padding: 10px;
+                    cursor: pointer;
+
+                    p{
+                        margin-top: 2px;
+                        margin-bottom: 5px;
+                    }
+
+                    .name{
+                        font-style: italic;     
+                         color: #191b26;
+;
+                    }
+
+                    .highlight_text{
+                        color: #5492EF;
+                        font-weight: 600;
+                    }
+                }
+
+                .single_suggestion{
+                    border-top: 1px solid #C7CACF;
+                }
+
+                // .single_suggestion:hover{
+                    
+                // }
+
+                .single_suggestion_hover{
+                    background-color: #eee;
+                }
+
+            }
+        }
+    }
+}

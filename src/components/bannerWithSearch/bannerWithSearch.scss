@@ -1,0 +1,35 @@
+.bannerWithSearch{
+    .bannerWithSearch_main{
+        .banner{
+            height: 475px;
+            background-image: url('../../assets/images/sunset-5928907_1280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .banner_content{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                text-align: center;
+                justify-content: center;
+
+                .banner_Heading, .banner_subHeading, .search_subDetails{
+                    color: #fff;
+                }
+
+                .banner_Heading{
+                    font-size: 32px;
+                }
+
+                .banner_subHeading{
+                    margin-top : 0;
+                }
+
+                .search_subDetails{
+                    opacity: 0.5;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
